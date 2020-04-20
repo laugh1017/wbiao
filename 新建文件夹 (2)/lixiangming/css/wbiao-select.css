@@ -78,6 +78,7 @@ ul{
 }
 .nav-right li a{
     color: #999;
+    
 }
 #red:hover{
     color: red;
@@ -102,6 +103,7 @@ ul{
 /* 客户服务 */
 .locat{
     position: relative;
+    border: 1px solid #f4f4f4ff;
    
 }
 .customer {
@@ -229,16 +231,20 @@ ul{
     width: 750px;
     height: 41px;
     margin-left: 250px;
+    font-size: 14px;
 }
 .nav-tap .nav-tap-right li{
     height: 41px;
     line-height: 41px;
     float: left;
-    margin: 0px 10px;
+    margin: 0px 12px;
     padding-bottom: 5px;
 }
 .nav-tap .nav-tap-right li a{
     color: #000;
+}
+.nav-tap .nav-tap-right li:nth-child(3){
+    border-bottom: 2px solid #b33636;
 }
 .nav-tap .nav-tap-right li:hover{
     border-bottom: 2px solid #b33636;
@@ -591,6 +597,7 @@ margin-top: 10px;
     height: 36px;
     padding: 20px 0 40px;
     text-align: center;
+    float: left;
 }
 .blok{
     display: block;
