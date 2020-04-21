@@ -175,12 +175,10 @@ ul{
     float: left;
     text-align: center;
 }
-.W_process .W_gnTab_nav li a{
-    color: #ab947d;
+.W_process .W_gnTab_nav li i{
+    font-style: normal;
 }
-/* .W_process .W_gnTab_nav li.on {
-    background: #ab947d;
-} */
+
 .W_process .W_gnTab_nav li:first-child{
     border-radius: 3px 0 0 3px;
 }
@@ -189,6 +187,7 @@ ul{
 }
 .W_process .W_gnTab_content {
     width: 955px;
+    height: 262px;
     margin: 0 auto;
 }
 .W_process .W_gnTab_content ul li {
