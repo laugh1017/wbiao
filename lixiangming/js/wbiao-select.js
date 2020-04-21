@@ -1,6 +1,6 @@
 var head = document.getElementsByClassName("nav-head")[0];
 var wrap1=document.getElementsByClassName("wrap")[0];
-var post=document.getElementsByClassName("post")[0]
+var post=document.getElementsByClassName("post")[0];
 post.onclick=function(){
     head.style.display="none";
     wrap1.style.display="none"
@@ -20,9 +20,9 @@ var ul=document.getElementById("c-click");
 ul.onclick=function(e){
     // 清除c-click上bg-black的类名
     for(var i=0;i<ul.children.length;i++){
-        ul.children[i].children[1].classList.remove("bg-black")
+        ul.children[i].children[1].children[0].classList.remove("bg-black")
     }
-    e.target.children[1].classList.add("bg-black")
+    e.target.children[0].classList.add("bg-black")
 }
 
 var bg_ul=document.getElementById("bg-fff");
@@ -42,3 +42,4 @@ bg_ul.onmouseover=function(e){
         e.target.style.color="rgb(102,102,102)"
     }
 }
+// 通过ajax 把后台数据渲染到前台页面
