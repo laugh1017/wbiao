@@ -1,31 +1,38 @@
-window.onload=function(){
-   ask(type,page)
-   // 中间商品点击切换
-   var ul=document.getElementById("c-click");
-    ul.onclick=function(e){
-    // 清除c-click上bg-black的类名
-    for(var i=0;i<ul.children.length;i++){
+window.onload = function () {
+
+    // 中间商品点击切换
+    var ul = document.getElementById("c-click");
+    var data = 1;
+    ul.onclick = function (e) {
+        // 清除c-click上bg-black的类名
+
+        for (var i = 0; i < ul.children.length; i++) {
             ul.children[i].children[1].children[0].classList.remove("bg-black")
+        }
+
+        if (e.target.children.length == 0) {
+            e.target.classList.add("bg-black")
+            data = e.target.innerHTML
+
+        } else {
+            e.target.children[0].classList.add("bg-black")
+            data = e.target.children[0].innerHTML
+        }
+        ask(data)
     }
-    if(e.target.children.length==0){
-        e.target.classList.add("bg-black")
-        
-    }else{
-        e.target.children[0].classList.add("bg-black")
-    }
-
-}
+    ask()
 }
 
 
-function ask(type,page){
+function ask(type="商务") {
     var tab = document.getElementById("data_base")
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             var data = JSON.parse(xhr.responseText);
+            tab.innerHTML=''
             for (var i = 0; i < data.length; i++) {
-                if(data[i].seckill){
+                if (data[i].seckill) {
                     tab.innerHTML += `
                     <li>
                     <div class="goods-img">
@@ -51,7 +58,7 @@ function ask(type,page){
                     </div>
                 </li>
                     `
-                }else{
+                } else {
                     tab.innerHTML += `
                 <li>
                 <div class="goods-img">
@@ -75,11 +82,11 @@ function ask(type,page){
             </li>
                 `
                 }
-                
+
             }
 
         }
     }
-    xhr.open('GET', 'http://localhost:8081/wbiao/lixiangming/php/wbiao_select.php?type='+type+'&page='+page, true);
+    xhr.open('GET', 'http://localhost:8081/wbiao/lixiangming/php/wbiao_select.php?type='+type+'&parger=1', true);
     xhr.send();
 }

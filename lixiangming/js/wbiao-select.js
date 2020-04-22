@@ -17,24 +17,6 @@ blast.onclick=function(){
     }
 }
 
-
-// 中间商品点击切换
-// var ul=document.getElementById("c-click");
-// ul.onclick=function(e){
-//     // 清除c-click上bg-black的类名
-//     for(var i=0;i<ul.children.length;i++){
-//             ul.children[i].children[1].children[0].classList.remove("bg-black")
-//     }
-//     if(e.target.children.length==0){
-//         e.target.classList.add("bg-black")
-//     }else{
-//         e.target.children[0].classList.add("bg-black")
-//     }
-
-// }
-
-
-
 // 左边热词和品牌切换
 var bg_ul=document.getElementById("bg-fff");
 var hot=document.getElementsByClassName("conten-left-hot")[0];
