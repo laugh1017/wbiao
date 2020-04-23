@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【万表世界】全球名表资讯互动平台！全球名表品牌文化、资讯、活动，手表知识、手表导购、手表鉴赏</title>
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="shortcut icon" href="images/favicon2.ico">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header">
+            <div class="headbg">
+                <div class="h-top mct tn cl">
+                    <div class="fl">
+                        <a target="_blank" href="" class="home">&lt;&lt;&nbsp;&nbsp;回到万表首页</a>
+                    </div>
+                    <div class="tnr fr">
+                        <a target="_blank" href="">登录</a>
+                        <a target="_blank" href="">注册</a>
+                        <a>|</a>
+                        <a target="_blank" href="">收藏</a>
+                        <a target="_blank" href="">手机版</a>
+                        <a href="" id="wx_show_btn">微信</a>
+                        <a target="_blank" href="">微博</a>
+                        <a target="_blank" id="app_show_btn" href="download.html">下载APP</a>
+                        <a target="_blank" href="">在线办卡</a>
+                    </div>
+                </div>
+            </div>
+            <div id="wx_qrcode_img" style="display:none">
+                <img src="images/qrcode.gif">
+            </div>
+            <div id="app_qrcode_img" style="display: none;">
+                <img src="images/app.png">
+            </div>
+            <div class="mct cl">
+                <div class="search fr">
+                    <form action="">
+                        <input type="hidden" value="1" name="type">
+                        <input name="w" class="hinput" value="" placeholder="腕表品牌、系列、型号、表店...">
+                        <input class="search_btn" type="submit" value="">
+                    </form>
+                </div>
+            </div>
+            <div class="head mct cl">
+    
+                <div class="logo fl">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <div class="dismain"><a href="watch-news.html">主页</a></div>
+                    <div class="dismain"><a href="news.html">资讯</a>
+                        <div class="disfloor">
+                            <a href="business.html" target="_blank">商务正装</a>
+                            <a href="fashion.html" target="_blank">时尚/潮流</a>
+                            <a href="sports.html" target="_blank">休闲/运动</a>
+                            <a href="collection.html" target="_blank">收藏/技趣</a>
+                            <a href="smart.html" target="_blank">科技/智能</a>
+                            <a href="artisan.html" target="_blank">千城百匠</a>
+                        </div>
+                    </div>
+                    <div class="dismain">
+                        <a href="">表库</a>
+                        <div class="disfloor">
+                            <a href="" target="_blank">选表</a>
+                            <a href="" target="_blank">百科</a>
+                        </div>
+                    </div>
+                    <div class="dismain">
+                        <a href="special.html">专题</a>
+                        <div class="disfloor">
+                            <a href="" target="_blank">巴塞尔表展</a>
+                            <a href="" target="_blank">香港钟表展</a>
+                            <a href="" target="_blank">日内瓦表展</a>
+                        </div>
+                    </div>
+                    <div class="dismain">
+                        <a href="">评测</a>
+                        <div class="disfloor">
+                            <a href="" target="_blank">评测规则</a>
+                            <a href="" target="_blank">评测文章</a>
+                            <a href="" target="_blank">评测寄语</a>
+                        </div>
+                    </div>
+                    <div class="dismain">
+                        <a href="download.html">下载APP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 图片 -->
+    <img class="img" src="images/download.jpg">
+    <!-- 底部 -->
+    <div class="ftw">
+
+        <div class="ft">
+            <div class="fnw mct cl">
+                <div class="fn cl">
+                    <ul class="cl">
+                        <li>
+                            <a href="" rel="nofollow">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="" rel="nofollow">加入我们</a>
+                        </li>
+                        <li>
+                            <a href="" rel="nofollow">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="" rel="nofollow">广告投放</a>
+                        </li>
+                        <li>
+                            <a href="">网站地图</a>
+                        </li>
+                        <li>
+                            <a href="" rel="nofollow">意见反馈</a>
+                        </li>
+                        <li class="wb">
+                            <a href=""> <i class="bg-wb"></i> 官方微博 <i class="bg-v"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="crw mct">
+                <div class="cr">
+                    <p>©2008-2020
+                        <a href="">粤ICP备09108738号-5</a>
+                        CHINA.WBIAO.COM.CN ALL RIGHT RESERVED
+                    </p>
+                    <p>广州市万表科技股份有限公司&nbsp;&nbsp;地址:广州市番禺区番禺大道北60-1号&nbsp;&nbsp;电话：020-85660618</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // 微信
+    var wx = document.getElementById("wx_show_btn");
+    var wximg = document.getElementById("wx_qrcode_img");
+    wx.onmouseenter = function () {
+        wximg.style.display = "block";
+    };
+    wx.onmouseleave = function () {
+        wximg.style.display = "none";
+    };
+    var app = document.getElementById("app_show_btn");
+    var appimg = document.getElementById("app_qrcode_img");
+    app.onmouseenter = function () {
+        appimg.style.display = "block";
+    };
+    app.onmouseleave = function () {
+        appimg.style.display = "none";
+    };
+</script>
+
+</html>
