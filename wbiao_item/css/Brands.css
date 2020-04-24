@@ -352,10 +352,15 @@ ul{
     transition: all 0.8s;
     margin-top: 55px;
 }
+.banner .hidden{
+    position: absolute;
+    z-index: 1;
+}
 .banner ul{
     position: absolute;
     bottom: 3%;
     left: 45%;
+    z-index: 2;
 }
 .banner ul li{
     width: 40px;
@@ -416,6 +421,20 @@ ul{
     right: 11.5%!important;
     background-image: url(../images/left.png)!important;
     transform: rotate(180deg);
+}
+.OMEGAh,.eposh,.HERBELINh,.MIDOh,.DAVOSAh,.LONGINESh{
+    border: 1px solid #d9c582;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    font-size: 14px;
+    color: #b3a26b;
+    text-align: center;
+    line-height: 130px;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
 /* 人气商品 */
 .commodity{
@@ -1099,6 +1118,7 @@ em, i {
     bottom: 55px;
     right: 0;
     box-shadow: 0 0 8px 1px rgba(0,0,0,.1);
+    z-index: 2;
 }
 .panel a{
     position: relative;

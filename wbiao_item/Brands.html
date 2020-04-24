@@ -477,11 +477,11 @@
         <div class="main">
             <!-- banner轮播图 -->
             <div class="banner">
-                <a href="javascript:void(0);">
-                    <img src="./images/轮播1.jpg" alt="" class="show scale">
+                <a href="javascript:void(0);" onclick="sendTo(26)">
+                    <img src="./images/ARMANDLB.jpg" alt="" class="show scale hidden">
                 </a>
-                <a href="javascript:void(0);">
-                    <img src="./images/轮播2.jpg" alt="">
+                <a href="Brands_OrientStar.html" target="_blank">
+                    <img src="./images/ORIENTLB.jpg" alt="">
                 </a>
                 <ul class="banner_ul">
                     <li class="active"></li>
@@ -492,34 +492,40 @@
             <div class="brand">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" onclick="sendTo(4)">
+                        <div class="swiper-slide OMEGAs" onclick="sendTo(4)">
                             <a href="javascript:void(0);">
-                                <img src="./images/OMEGA.jpg" alt="">
+                                <img src="./images/OMEGA.jpg" alt="" class="OMEGA">
+                                <div class="brand_hover OMEGAh">欧米茄OMEGA</div>
                             </a>
                         </div>
-                        <div class="swiper-slide" onclick="sendTo(3)">
+                        <div class="swiper-slide eposs" onclick="sendTo(3)">
                             <a href="javascript:void(0);">
-                                <img src="./images/epos.jpg" alt="">
+                                <img src="./images/epos.jpg" alt="" class="epos">
+                                <div class="brand_hover eposh">瑞士爱宝时官方旗舰店</div>
                             </a>
                         </div>
-                        <div class="swiper-slide" onclick="sendTo(7)">
+                        <div class="swiper-slide HERBELINs" onclick="sendTo(7)">
                             <a href="javascript:void(0);">
-                                <img src="./images/HERBELIN.jpg" alt="">
+                                <img src="./images/HERBELIN.jpg" alt="" class="HERBELIN">
+                                <div class="brand_hover HERBELINh">法国赫柏林官方旗舰店</div>
                             </a>
                         </div>
-                        <div class="swiper-slide" onclick="sendTo(6)">
+                        <div class="swiper-slide MIDOs" onclick="sendTo(6)">
                             <a href="javascript:void(0);">
-                                <img src="./images/MIDO.jpg" alt="">
+                                <img src="./images/MIDO.jpg" alt="" class="MIDO">
+                                <div class="brand_hover MIDOh">美度MIDO</div>
                             </a>
                         </div>
-                        <div class="swiper-slide" onclick="sendTo(8)">
+                        <div class="swiper-slide DAVOSAs" onclick="sendTo(8)">
                             <a href="javascript:void(0);">
-                                <img src="./images/DAVOSA.jpg" alt="">
+                                <img src="./images/DAVOSA.jpg" alt="" class="DAVOSA">
+                                <div class="brand_hover DAVOSAh">瑞士迪沃斯官方旗舰店</div>
                             </a>
                         </div>
-                        <div class="swiper-slide" onclick="sendTo(1)">
+                        <div class="swiper-slide LONGINESs" onclick="sendTo(1)">
                             <a href="javascript:void(0);">
-                                <img src="./images/LONGINES.jpg" alt="">
+                                <img src="./images/LONGINES.jpg" alt="" class="LONGINES">
+                                <div class="brand_hover LONGINESh">浪琴LONGINES</div>
                             </a>
                         </div>
                     </div>
@@ -857,6 +863,73 @@
         function sendTo(id) {
             window.open("http://localhost/wbiao_item/Brands_shop.html?id=" + id);
         }
+        // 小轮播图片文字交替显示
+        var OMEGA = document.querySelector('.OMEGA');
+        var OMEGAs = document.querySelector('.OMEGAs');
+        var OMEGAh = document.querySelector('.OMEGAh');
+        var epos = document.querySelector('.epos');
+        var eposs = document.querySelector('.eposs');
+        var eposh = document.querySelector('.eposh');
+        var HERBELIN = document.querySelector('.HERBELIN');
+        var HERBELINs = document.querySelector('.HERBELINs');
+        var HERBELINh = document.querySelector('.HERBELINh');
+        var MIDO = document.querySelector('.MIDO');
+        var MIDOs = document.querySelector('.MIDOs');
+        var MIDOh = document.querySelector('.MIDOh');
+        var DAVOSA = document.querySelector('.DAVOSA');
+        var DAVOSAs = document.querySelector('.DAVOSAs');
+        var DAVOSAh = document.querySelector('.DAVOSAh');
+        var LONGINES = document.querySelector('.LONGINES');
+        var LONGINESs = document.querySelector('.LONGINESs');
+        var LONGINESh = document.querySelector('.LONGINESh');
+        OMEGAs.addEventListener('mouseenter', function () {
+            OMEGAh.style.display = 'block';
+            OMEGA.style.display = 'none';
+        })
+        OMEGAs.addEventListener('mouseleave', function () {
+            OMEGAh.style.display = 'none';
+            OMEGA.style.display = 'block';
+        })
+        eposs.addEventListener('mouseenter', function () {
+            eposh.style.display = 'block';
+            epos.style.display = 'none';
+        })
+        eposs.addEventListener('mouseleave', function () {
+            eposh.style.display = 'none';
+            epos.style.display = 'block';
+        })
+        HERBELINs.addEventListener('mouseenter', function () {
+            HERBELINh.style.display = 'block';
+            HERBELIN.style.display = 'none';
+        })
+        HERBELINs.addEventListener('mouseleave', function () {
+            HERBELINh.style.display = 'none';
+            HERBELIN.style.display = 'block';
+        })
+        MIDOs.addEventListener('mouseenter', function () {
+            MIDOh.style.display = 'block';
+            MIDO.style.display = 'none';
+        })
+        MIDOs.addEventListener('mouseleave', function () {
+            MIDOh.style.display = 'none';
+            MIDO.style.display = 'block';
+        })
+        DAVOSAs.addEventListener('mouseenter', function () {
+            DAVOSAh.style.display = 'block';
+            DAVOSA.style.display = 'none';
+        })
+        DAVOSAs.addEventListener('mouseleave', function () {
+            DAVOSAh.style.display = 'none';
+            DAVOSA.style.display = 'block';
+        })
+        LONGINESs.addEventListener('mouseenter', function () {
+            LONGINESh.style.display = 'block';
+            LONGINES.style.display = 'none';
+        })
+        LONGINESs.addEventListener('mouseleave', function () {
+            LONGINESh.style.display = 'none';
+            LONGINES.style.display = 'block';
+        })
     </script>
 </body>
 

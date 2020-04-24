@@ -31,7 +31,7 @@ window.addEventListener('load', function () {
                 banner_img[i].removeAttribute('class');
                 banner_li[i].removeAttribute('class');
             }
-            banner_img[this.index].setAttribute('class', 'scale show');
+            banner_img[this.index].setAttribute('class', 'scale show hidden');
             this.setAttribute('class', 'active');
             num = this.index;
         })
@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
                 banner_img[i].removeAttribute('class');
                 banner_li[i].removeAttribute('class');
             }
-            banner_img[num].setAttribute('class', 'scale show');
+            banner_img[num].setAttribute('class', 'scale show hidden');
             banner_li[num].setAttribute('class', 'active');
         }, 3000)
     }
@@ -149,5 +149,4 @@ window.addEventListener('load', function () {
     ntalk_pop.addEventListener('mouseleave', function () {
         ntalk_pop.style.display = 'none';
     })
-
 })

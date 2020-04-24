@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>男表女表价格及图片,腕表报价「万表官网」</title>
+    <title>日本OrientStar【东方星】官方旗舰店--超越时代 恒久闪耀</title>
     <link href="./favicon.ico" type="image/x-icon" rel="shortcut icon" />
-    <link rel="stylesheet" href="./css/Brands_shop.css">
-    <script src="./js/Brands_shop.js"></script>
+    <link rel="stylesheet" href="./css/Brands_OrientStar.css">
+    <script src="./js/Brands_OrientStar.js"></script>
 </head>
 
 <body>
@@ -58,8 +58,13 @@
                                 src="./images/265f397424734431a7b41a9e64d5e643.jpg" alt=""></span>
                         <div class="sp_txt fl">
                             <p class="sp_name">
+                                东方星官方旗舰店<i class="shop_add">自营</i>
                             </p>
                             <p class="sp_sales">
+                                销量
+                                <em class="shop_sales">949</em>
+                                &nbsp;&nbsp;粉丝
+                                <em class="shop_fans">248</em>
                             </p>
                         </div>
                     </a>
@@ -269,26 +274,53 @@
                 </ul>
             </div>
             <!-- image部分 -->
-            <div class="imagemaps-wrapper img1">
+            <div class="imagemaps-wrapper">
+                <img src="./images/86713b6dc4564ec9a46c38e90179b6a0.jpg">
             </div>
-            <div class="imagemaps-wrapper img2">
+            <div class="imagemaps-wrapper">
+                <img src="./images/75ba2059afb94fb4ad6cdd463eb8d3c1.jpg">
             </div>
-            <div class="imagemaps-wrapper img3">
+            <div class="imagemaps-wrapper">
+                <img src="./images/f6583208d21947b189026f3abd8aa4ab.jpg">
             </div>
-            <div class="imagemaps-wrapper img4">
+            <div class="imagemaps-wrapper">
+                <img src="./images/0c19f06fe6974f3ca8ded0b3733ac448.jpg">
             </div>
-            <div class="imagemaps-wrapper img5">
+            <div class="imagemaps-wrapper">
+                <img src="./images/0ef48b1be4cb491ab839ce77678493c7.jpg">
             </div>
-            <div class="imagemaps-wrapper img6">
+            <div class="imagemaps-wrapper">
+                <img src="./images/145ea1c245084ad891002cdb96b6068b.jpg">
             </div>
-            <div class="imagemaps-wrapper img7">
+            <div class="imagemaps-wrapper">
+                <img src="./images/94f73f2ba75f446c8d6cb5b31644c2fb.jpg">
             </div>
-            <div class="imagemaps-wrapper img8">
+            <div class="imagemaps-wrapper">
+                <img src="./images/bf57f5a4b71742e58df1603579af5fcb.jpg">
             </div>
-            <!-- 商品 -->
-            <div class="shop_goods_list clearfix">
-                <ul id="shoplist">
-                </ul>
+            <div class="imagemaps-wrapper">
+                <img src="./images/85cd6f9a09e44e16ad99c7713a909a0a.jpg">
+            </div>
+            <div class="imagemaps-wrapper">
+                <img src="./images/a5d8879d1afd490c8b692b6922583f19.jpg">
+            </div>
+            <div class="imagemaps-wrapper">
+                <img src="./images/269ec7968e61489485c00e2d662b544e.jpg">
+            </div>
+            <div class="imagemaps-wrapper">
+                <img src="./images/4be80f35fc6b4bbe9681b4d19b417013.jpg">
+            </div>
+            <div class="imagemaps-wrapper">
+                <img src="./images/0f5c1089ac05429bbad5537190cb5ce8.jpg">
+            </div>
+            <div class="imagemaps-wrapper">
+                <img src="./images/bfa294deeb3f4558b6d5515fc331844f.jpg">
+            </div>
+            <div class="imagemaps-wrapper">
+                <img src="./images/ede1c26fb1aa473f98b67b50a050b19d.jpg">
+            </div>
+            <div class="imagemaps-wrapper">
+                <img src="./images/93e4247b6d3b4d6395eb115040af704b.jpg">
             </div>
         </div>
         <!-- 客服 -->
@@ -415,91 +447,6 @@
             </div>
         </div>
     </div>
-    <script>
-        // 详情页获取
-        var string = window.location.search;
-        var id = string.split("=")[1];
-        //获取渲染对应的元素
-        var sp_name = document.querySelector('.sp_name');
-        var sp_sales = document.querySelector('.sp_sales');
-        var sign = document.querySelector('.pt-shop_sign');
-        var img1 = document.querySelector('.img1');
-        var img2 = document.querySelector('.img2');
-        var img3 = document.querySelector('.img3');
-        var img4 = document.querySelector('.img4');
-        var img5 = document.querySelector('.img5');
-        var img6 = document.querySelector('.img6');
-        var img7 = document.querySelector('.img7');
-        var img8 = document.querySelector('.img8');
-        var shoplist = document.getElementById('shoplist');
-        // 详情页面渲染
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                var data = JSON.parse(xhr.responseText);
-                // console.log(data.id);
-                sp_name.innerHTML = `${data.trademark} <i class="shop_add">自营</i>`;
-                sp_sales.innerHTML = `销量
-                                <em class="shop_sales">${data.sales}</em>
-                                &nbsp;&nbsp;粉丝
-                                <em class="shop_fans">${data.fans}</em>`;
-                sign.innerHTML = `<img src="${data.signimg}" alt="">`
-                img1.innerHTML = `<img src="${data.contentimg1}" alt="">`
-                img2.innerHTML = `<img src="${data.contentimg2}" alt="">`
-                img3.innerHTML = `<img src="${data.contentimg3}" alt="">`
-                img4.innerHTML = `<img src="${data.contentimg4}" alt="">`
-                img5.innerHTML = `<img src="${data.contentimg5}" alt="">`
-                img6.innerHTML = `<img src="${data.contentimg6}" alt="">`
-                img7.innerHTML = `<img src="${data.contentimg7}" alt="">`
-                img8.innerHTML = `<img src="${data.contentimg8}" alt="">`
-                var arr = [[data.shop_goods_list_img1, data.shop_goods_list_handprice1, data.shop_goods_list_paymonth1, data.shop_goods_list_totalprice1, data.shop_goods_list_text1],
-                [data.shop_goods_list_img2, data.shop_goods_list_handprice2, data.shop_goods_list_paymonth2, data.shop_goods_list_totalprice2, data.shop_goods_list_text2],
-                [data.shop_goods_list_img3, data.shop_goods_list_handprice3, data.shop_goods_list_paymonth3, data.shop_goods_list_totalprice3, data.shop_goods_list_text3],
-                [data.shop_goods_list_img4, data.shop_goods_list_handprice4, data.shop_goods_list_paymonth4, data.shop_goods_list_totalprice4, data.shop_goods_list_text4],
-                [data.shop_goods_list_img5, data.shop_goods_list_handprice5, data.shop_goods_list_paymonth5, data.shop_goods_list_totalprice5, data.shop_goods_list_text5],
-                [data.shop_goods_list_img6, data.shop_goods_list_handprice6, data.shop_goods_list_paymonth6, data.shop_goods_list_totalprice6, data.shop_goods_list_text6],
-                [data.shop_goods_list_img7, data.shop_goods_list_handprice7, data.shop_goods_list_paymonth7, data.shop_goods_list_totalprice7, data.shop_goods_list_text7],
-                [data.shop_goods_list_img8, data.shop_goods_list_handprice8, data.shop_goods_list_paymonth8, data.shop_goods_list_totalprice8, data.shop_goods_list_text8]];
-                for (var i = 0; i < arr.length; i++) {
-                    shoplist.innerHTML += `
-                <li>
-                        <a target="_blank" href="javascript:void(0);" class="s_goods_img">
-                            <img class="lazy-load" src="${arr[i][0]}" alt="">
-                            <div class="yaofeng">
-                                <img src="./images/5101e384a7604a3b92d47bdbce7f4e0c.png" alt="">
-                                <span>¥<em class="yaofeng_price">${arr[i][1]}</em>
-                                </span>
-                            </div>
-                        </a>
-                        <div class="goods_txt">
-                            <p class="tPrc">
-                                <em class="month_tag">月付</em>
-                                <span class="fenqi_price">¥${arr[i][2]}</span> <span class="s_price">¥${arr[i][3]}</span>
-                            </p>
-                            <a href="javascript:void(0);" class="s_goods_name elps2">${arr[i][4]}</a>
-                            <span class="fenqi_tag">
-                                免息分期
-                            </span>
-                            <div class="goods_hover">
-                                <a href="javascript:void(0);" class="add_to_keep">加入收藏
-                                </a>
-                                <a href="javascript:void(0);" class="already_keep h">
-                                    已收藏
-                                </a>
-                                <a href="javascript:void(0);" class="add_to_cart" onclick="shopcarsend(${i+1})">
-                                    加入购物车
-                                </a>
-                            </div>
-                        </div>
-                </li>
-                `
-                }
-                console.log(shoplist.innerHTML);
-            }
-        }
-        xhr.open('GET', 'http://localhost/wbiao_item/php/Brands_shop.php?id=' + id, true);
-        xhr.send();
-    </script>
 </body>
 
 </html>

@@ -53,13 +53,62 @@
             </div>
         </div>
         <!-- 购物车内容 -->
+        <!-- 购物车为空时 -->
         <div class="content">
-            <div class="shopcarfun">
-                <i class="cart"></i>
-                <p class="p1">你的购物车还是空的</p>
-                <p class="p2">现在<a href="javascript:void(0);" style="color: #cc5252;">登录</a>，购物车信息将一直为您保存</p>
-                <div class="cart_btn"> <a href="javascript:void(0);" class="goto_shoping">马上购物</a> <a
-                        href="javascript:void(0);" class="look_collect">看看收藏</a></div>
+            <i class="cart"></i>
+            <p class="p1">你的购物车还是空的</p>
+            <p class="p2">现在<a href="javascript:void(0);" style="color: #cc5252;">登录</a>，购物车信息将一直为您保存</p>
+            <div class="cart_btn"> <a href="javascript:void(0);" class="goto_shoping">马上购物</a> <a
+                    href="javascript:void(0);" class="look_collect">看看收藏</a></div>
+        </div>
+        <!-- 购物车有商品时 -->
+        <div class="main">
+            <div class="wrap">
+                <h2>
+                    全部商品
+                </h2>
+                <div class="car-content">
+                    <div class="shop">
+                        <div class="shop-top">
+                            <div class="titlecheck fl">
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <a href="javascript:void(0);" class="shoptitle fl">浪琴LONGINES</a>
+                        </div>
+                        <div class="shopgoods clearfix">
+                            <input type="checkbox" name="" id="shopcheck">
+                            <div class="goods-img fl">
+                                <img src="./images/d2782fc4cce9470da7d703f23a7a7ea0.jpg" alt="">
+                            </div>
+                            <div class="goods-txt fl">
+                                <p class="p1">浪琴longines-嘉岚系列 L4.908.4.11.6 机械男表 </p>
+                                <p class="specifications">钢 白色 精钢</p>
+                            </div>
+                            <ul class="fr">
+                                <li class="unit_price"> ¥<em>11250</em></li>
+                                <li class="goods_num"> <span class="reduce calc-btns">-</span> <input type="text"
+                                        class="num" value="1" data-stock="1" readonly=""> <span
+                                        class="add calc-btns">+</span></li>
+                                <li class="total_price">¥<em class="subTotal">11250</em></li>
+                                <li class="others"> <a href="javascript:void(0);" class="delete_goods">删除</a> <a
+                                        href="javascript:void(0);" class="to_collection">移入收藏</a></li>
+                            </ul>
+                        </div>
+                        <ul class="clearfix shopfoot">
+                            <li class="select_tik fl">
+                                <input type="checkbox" name="" id="footcheck">
+                            </li>
+                            <li class="sel_all_txt"><a href="javascript:void(0);">全选</a></li>
+                            <li class="delete_goods"><a href="javascript:void(0);">删除</a></li>
+                            <li class="move_in_collect"><a href="javascript:void(0);">移入收藏</a></li>
+                            <li class="choose_num">已选商品<em id="selectedQuantity">0</em>件</li>
+                            <li class="settle_btn"><a href="javascript:void(0);">结算</a></li>
+                            <li class="settle_price fr">
+                                <p class="p1">合计<span>¥<i id="payableAmount">0</i></span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 底部 -->
@@ -192,6 +241,14 @@
             } else {
                 wb_more_link.style.display = 'none';
                 flog = 1;
+            }
+        }
+        // 渲染购物车商品
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var data = JSON.parse(xhr.responseText);
+
             }
         }
     </script>
