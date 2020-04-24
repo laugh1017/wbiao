@@ -1,0 +1,177 @@
+* {
+    font-family: Arial,'Microsoft Yahei','\5FAE\8F6F\96C5\9ED1',sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.bnvw {
+    background-color: #f4f4f4;
+}
+.bnv {
+    line-height: 32px;
+    height: 32px;
+    font-size: 13px;
+}
+.bnvl {
+    padding-left: 11px;
+}
+.bnv span {
+    padding-right: 10px;
+}
+.bnv span a {
+    color: #7f4b1f;
+    padding: 0;
+}
+/* 左侧 */
+.arl {
+    width: 680px;
+}
+/* 轮播 */
+.ar-txt{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    left: 0;
+    bottom: 1px;
+    height: 84px;
+    padding: 8px 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.ar-txt p {
+    color: #ffffff;
+    width: 438px;
+    margin: 0 auto;
+}
+.ar-txt .tt{
+    line-height: 36px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+/* 正文内容 */
+.arlt .arl .bxlt {
+    margin-top: 27px;
+    padding-bottom: 70px;
+}
+.h1_custom {
+    display: block;
+    color: #333333;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 31px;
+    border-bottom: 3px solid #e6e6e6;
+}
+.bxlt .lta li {
+    padding: 36px 0;
+    border-bottom: 1px solid #ebeced;
+}
+.bxlt .lta dt, .bxlt dt a {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+.bxlt .lta dt a {
+    display: block;
+    background-color: #eeeeee;
+    position: relative;
+}
+.bxlt .lta dd {
+    width: 468px;
+    padding: 13px 0 0 20px;
+}
+.bxlt .lta .tt {
+    font-size: 14px;
+    line-height: 28px;
+    height: 28px;
+    overflow: hidden;
+}
+.bxlt .lta .tt span, .bxlt .tt span a {
+    color: #194886!important;
+}
+.bxlt .lta .tt a {
+    color: #333;
+    font-weight: bold;
+}
+.bxlt .lta .mt {
+    color: #888888;
+    line-height: 30px;
+}
+.bxlt .lta .mt span {
+    padding-right: 19px;
+}
+.bxlt .lta .ct {
+    line-height: 20px;
+}
+.bxlt .lta .tg span a {
+    color: #194886;
+    margin-right: 6px;
+}
+.page {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    clear: both;
+}
+.page .on {
+    background-color: #dcdcdc;
+    border-color: #dcdcdc;
+}
+.page a {
+    font-family: songti!important;
+    background: #f7f7f7;
+    color: #878787;
+    display: inline-block;
+    padding: 7px 12px;
+    margin-right: 6px;
+    border-radius: 5px;
+}
+.arr .bx1 {
+    margin-top: 23px;
+}
+.arr .bxt h2 {
+    line-height: 44px;
+    height: 44px;
+    font-weight: normal ;
+    font-size: 18px;
+}
+.arr .bxt span {
+    padding-left: 6px;
+    font-size: 14px ;
+}
+.arr .bxsw {
+    margin-top: 10px;
+}
+.arr .bxsw .bxt {
+    margin-bottom: 7px;
+}
+.arr .bxsw dl, .arr .bxsw dt, .arr .bxsw dt a, .arr .bxsw dt img {
+    width: 300px;
+    height: 186px;
+}
+/* 编辑推荐 */
+.bx3 {
+    margin-top: 13px;
+}
+.arr .bxc li {
+    height: 26px;
+}
+.arr .bxc li span {
+    float: left;
+    width: 28px;
+    font-size: 16px;
+    line-height: 26px;
+    height: 26px;
+    font-family: "Times New Roman",Times,serif;
+    font-style: italic;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.arr .bxc li a {
+    font-style: normal;
+    line-height: 26px;
+    height: 26px;
+    vertical-align: middle;
+    margin-top: -1px;
+}
