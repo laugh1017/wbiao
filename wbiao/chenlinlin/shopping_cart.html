@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>万表网</title>
+    <link href="./favicon.ico" type="image/x-icon" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/shopping_cart.css">
+    <script src="./js/shopping_cart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 广告部分 -->
+        <div class="AD">
+            <a href=""><img src="./images/55d6c4a1ea494d1797c603ca30fcaa8e.jpg" alt=""></a>
+            <i class="close"></i>
+        </div>
+        <!-- 头部 -->
+        <div class="header">
+            <div class="zp">
+                <div class="wrap">
+                    <a target="_blank" href="../chenlinlin/member_benefits.html">正品保障，免息分期！</a>
+                </div>
+            </div>
+            <div class="logo-nav">
+                <div class="fl logo-icon">
+                    <a href="javascript:void(0);" class="wbiao"> <img src="./images/logo-icon.png" alt=""></a>
+                    <a href="javascript:void(0);" class="slogan"> <img src="./images/slogan-02242018.png" alt=""></a>
+                </div>
+                <div class="nav fr">
+                    <ul>
+                        <li><a href="javascript:void(0);">请登录</a></li>
+                        <li><a href="javascript:void(0);" style="color: #ae0f17;">注册即送3500元大礼包</a></li>
+                        <li style="color: #ddd;">|</li>
+                        <li><a href="../chenlinlin/shopping_cart.html">购物车</a></li>
+                        <li style="color: #ddd;">|</li>
+                        <li><a href="../weishiyang/member.html">客户服务</a></li>
+                        <li style="color: #ddd;">|</li>
+                        <li><a href="./member_benefits.html" target="_blank">会员福利</a></li>
+                        <li style="color: #ddd;">|</li>
+                        <li><a href="./ENGLISH.html" target="_blank">ENGLISH</a></li>
+                    </ul>
+                </div>
+                <div class="order_head_right fr">
+                    <ul>
+                        <li class="on"><i class="i_on"></i><span>购物车</span></li>
+                        <li><i class="i_02"></i><span>填写订单信息</span></li>
+                        <li><i class="i_02"></i><span>支付订单</span></li>
+                        <li><i class="i_02"></i><span>等待签收</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 购物车内容 -->
+        <!-- 购物车为空时 -->
+        <div class="content">
+            <i class="cart"></i>
+            <p class="p1">你的购物车还是空的</p>
+            <p class="p2">现在<a href="javascript:void(0);" style="color: #cc5252;">登录</a>，购物车信息将一直为您保存</p>
+            <div class="cart_btn"> <a href="javascript:void(0);" class="goto_shoping" onclick="Brands()">马上购物</a> <a
+                    href="javascript:void(0);" class="look_collect">看看收藏</a></div>
+        </div>
+        <!-- 购物车有商品时 -->
+        <div class="main">
+            <div class="wrap">
+                <h2>
+                    全部商品
+                </h2>
+                <div class="car-content">
+                    <!-- 商品开始 -->
+                    <!-- <div class="shop">
+                        <div class="shop-top">
+                            <div class="titlecheck fl">
+
+                            </div>
+                            <a href="javascript:void(0);" class="shoptitle fl">浪琴LONGINES</a>
+                        </div>
+                        <div class="shopgoods clearfix">
+                            <input type="checkbox" name="" id="shopcheck" class="dx">
+                            <div class="goods-img fl">
+                                <img src="./images/d2782fc4cce9470da7d703f23a7a7ea0.jpg" alt="">
+                            </div>
+                            <div class="goods-txt fl">
+                                <p class="p1">浪琴longines-嘉岚系列 L4.908.4.11.6 机械男表 </p>
+                                <p class="specifications">钢 白色 精钢</p>
+                            </div>
+                            <ul class="fr list">
+                                <li class="unit_price">
+                                    ¥<em>11250</em>
+                                </li>
+                                <li class="goods_num">
+                                    <span class="reduce calc-btns" onclick="rec()">-</span> <input type="text"
+                                        class="num" value="1">
+                                    <span class="add calc-btns" onclick="add()">+</span>
+                                </li>
+                                <li class="total_price">¥<em class="subTotal">11250</em>
+                                </li>
+                                <li class="others">
+                                    <a href="javascript:void(0);" class="delete_goods">删除</a>
+                                    <a href="javascript:void(0);" class="to_collection">移入收藏</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <!-- 商品结束 -->
+                </div>
+                <!-- 全选结算功能 -->
+                <ul class="clearfix shopfoot">
+                    <li class="select_tik fl">
+                        <input type="checkbox" name="" id="footcheck">
+                    </li>
+                    <li class="sel_all_txt"><a href="javascript:void(0);">全选</a></li>
+                    <li class="settle_btn"><a href="javascript:void(0);">结算</a></li>
+                    <li class="settle_price fr">
+                        <p class="p1">合计<span>¥<i id="payableAmount">0</i></span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="W_pt_footer">
+            <div class="pt_footer_ribbon CUSTOMER-SERVICE">
+                <div class="footer_ribbon_a clearfix"><a rel="nofollow" href="javascript:void(0);"><span
+                            class="icon-a-rib01"></span> 正品保障</a><a rel="nofollow" href="javascript:void(0);"><span
+                            class="icon-a-rib02"></span> 免息分期</a><a rel="nofollow" href="javascript:void(0);"><span
+                            class="icon-a-rib03"></span> 全球联保</a><a rel="nofollow" href="javascript:void(0);"><span
+                            class="icon-a-rib04"></span> 假一赔三</a><a rel="nofollow" href="javascript:void(0);"><span
+                            class="icon-a-rib05"></span> 终身售后</a></div>
+            </div>
+            <div class="pt_footer_inst clearfix">
+                <div class="inst_left fl">
+                    <div class="content_number">
+                        <div class="number_info" type="2">
+                            <p class="p1">客服电话</p>
+                            <p class="p2">400-883-2688</p>
+                        </div>
+                        <div class="number_info out_line" type="3">
+                            <p class="p1">外呼电话</p>
+                            <p class="p2">020-83931899</p>
+                        </div>
+                    </div>
+                    <p class="p4"> <a href="javascript:;" class="CUSTOMER-SERVICE">售后维修</a></p>
+                </div>
+                <div class="inst_middle fl">
+                    <dl>
+                        <dt>新手指南</dt>
+                        <dd> <a target="_blank" href="javascript:void(0);">注册新会员</a> <a target="_blank"
+                                href="javascript:void(0);">购物流程</a> <a target="_blank"
+                                href="javascript:void(0);">手表小知识</a> <a target="_blank"
+                                href="javascript:void(0);">退换货流程</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt>支 付</dt>
+                        <dd> <a target="_blank" href="javascript:void(0);">支付方式</a> <a target="_blank"
+                                href="javascript:void(0);">分期付款</a>
+                            <a target="_blank" href="javascript:void(0);">发票说明</a> <a target="_blank"
+                                href="javascript:void(0);">支付问题</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>配 送</dt>
+                        <dd> <a target="_blank" href="javascript:void(0);">包裹签收</a> <a target="_blank"
+                                href="/help-13.html">配送方式</a> <a target="_blank" href="javascript:void(0);">配送说明</a> <a
+                                target="_blank" href="javascript:void(0);">自提流程</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt>万表保障</dt>
+                        <dd> <a target="_blank" href="javascript:void(0);">正品保障</a> <a target="_blank"
+                                href="javascript:void(0);">售后服务</a> <a target="_blank"
+                                href="javascript:void(0);">价格保护</a> <a target="_blank"
+                                href="javascript:void(0);">七天退换说明</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt class="on">开放合作</dt>
+                        <dd> <a target="_blank" href="javascript:void(0);">关于万表</a> <a class="on" target="_blank"
+                                href="javascript:void(0);">商务合作</a> <a target="_blank"
+                                href="javascript:void(0);">万表声明</a> </dd>
+                    </dl>
+                </div>
+                <div class="footer_ggt fl"> <a target="_blank" href="javascript:void(0);">
+                        <img src="./images/82f737b685574bd88fbc95d560346f84.jpg" alt=""></a> </div>
+            </div>
+            <div class="pt_footer_copyright">
+                <div class="footer_wrap">
+                    <div class="wb_link">
+                        <div class="wb_friend_links"> <a target="_blank" href="javascript:void(0);">万表app</a> <a
+                                target="_blank" rel="nofollow" href="javascript:void(0);">万表名匠</a> <a target="_blank"
+                                href="javascript:void(0);">奢品共享</a> <a target="_blank"
+                                href="javascript:void(0);">新款手表</a> <a target="_blank"
+                                href="javascript:void(0);">二手商城</a> <a target="_blank" href="javascript:void(0);">热销</a>
+                            <a target="_blank" href="javascript:void(0);">天猫万表网旗舰店</a>
+                            <a target="_blank" href="javascript:void(0); ">京东万表网旗舰店</a> <a target="_blank"
+                                href="javascript:void(0);">手表资讯</a> <a target="_blank"
+                                href="javascript:void(0);">天梭手表</a> <span class="more_link">&gt;</span>
+                            <p class="wb_more_link" style="display: none;"> <a target="_blank"
+                                    href="javascript:void(0);">浪琴手表</a> <a target="_blank"
+                                    href="javascript:void(0);">欧米茄手表</a> <a target="_blank"
+                                    href="javascript:void(0);">卡西欧手表</a> <a target="_blank"
+                                    href="javascript:void(0);">卡地亚手表</a> <a target="_blank"
+                                    href="javascript:void(0);">手表图片</a> <a target="_blank"
+                                    href="javascript:void(0);">手表评论</a> <a target="_blank"
+                                    href="javascript:void(0);">手表排行榜</a> <a target="_blank"
+                                    href="javascript:void(0);">珠宝新闻</a> <a target="_blank"
+                                    href="javascript:void(0);">手表问答</a> <a target="_blank"
+                                    href="javascript:void(0);">智能手表</a> <a target="_blank"
+                                    href="javascript:void(0);">信用卡中心</a> <a target="_blank"
+                                    href="javascript:void(0);">手表专题</a> <a target="_blank"
+                                    href="javascript:void(0);">手表常识</a> </p>
+                        </div>
+                    </div>
+                    <div class="wb_corp">
+                        <p>万表网名表商城 版权所有 2009-2020 <a target="_blank" href="javascript:void(0);"
+                                rel="nofollow">ICP备案证书号:粤ICP备09108738号-2</a> <a target="_blank"
+                                href="javascript:void(0);" rel="nofollow">营业执照</a>
+                            网监备案:4401060103141</p>
+
+                        <p>广州市万表科技股份有限公司 / 广州市万表信息技术有限公司 地址:广州市番禺区番禺大道北60-1号</p>
+
+                        <p>Copyright 2009-2020 WWW.WBIAO.CN.LTD ALL RIGHT RESERVED.</p>
+                    </div>
+                </div>
+                <div class="wb_filing">
+                    <div class="wb_certificate"> <a target="_blank" rel="nofollow" href="javascript:void(0);"
+                            title="红盾电子"><img src="images/ea49d2babdfb40e8a6299853dcdaad95.png"></a>
+                        <a target="_blank" rel="nofollow" href="javascript:void(0);" title="可信网站">
+                            <img src="images/974c6d4831df40e1a8f373b813bf0ff6.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 商品渲染
+        var shopcar = document.querySelector('.car-content')
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // console.log(xhr.responseText);
+                var data = JSON.parse(xhr.responseText);
+                console.log(data);
+                var content = document.querySelector('.content');
+                var main = document.querySelector('.main');
+                if (data == null) {
+                    content.style.display = 'block';
+                    main.style.display = 'none';
+                } else {
+                    content.style.display = 'none';
+                    main.style.display = 'block';
+                }
+                for (var i = 0; i < data.length; i++) {
+                    arr = [[data[i].shop_goods_list_img1, data[i].shop_goods_list_text1, data[i].shop_goods_list_totalprice1, data[i].shop_goods_list_totalprice1], [data[i].shop_goods_list_img2, data[i].shop_goods_list_text2, data[i].shop_goods_list_totalprice2, data[i].shop_goods_list_totalprice2], [data[i].shop_goods_list_img3, data[i].shop_goods_list_text3, data[i].shop_goods_list_totalprice3, data[i].shop_goods_list_totalprice3], [data[i].shop_goods_list_img4, data[i].shop_goods_list_text4, data[i].shop_goods_list_totalprice4, data[i].shop_goods_list_totalprice4], [data[i].shop_goods_list_img5, data.shop_goods_list_text5, data[i].shop_goods_list_totalprice5, data[i].shop_goods_list_totalprice5], [data[i].shop_goods_list_img6, data[i].shop_goods_list_text6, data[i].shop_goods_list_totalprice6, data[i].shop_goods_list_totalprice6], [data[i].shop_goods_list_img7, data[i].shop_goods_list_text7, data[i].shop_goods_list_totalprice7, data[i].shop_goods_list_totalprice7], [data[i].shop_goods_list_img8, data[i].shop_goods_list_text8, data[i].shop_goods_list_totalprice8, data[i].shop_goods_list_totalprice8]]
+                    for (var j = 0; j < arr.length; j++) {
+                        // console.log(arr[j][1]);
+                        // console.log(data[i]);
+                        if (arr[j][1] != undefined) {
+                            shopcar.innerHTML += `
+                <div class="shop clearfix">
+                        <div class="shop-top">
+                            <div class="titlecheck fl">
+                            </div>
+                            <a href="javascript:void(0);" class="shoptitle fl">${data[i].title}</a>
+                        </div>
+                        <div class="shopgoods clearfix">
+                            <input type="checkbox" name="" id="shopcheck" class="dx">
+                            <div class="goods-img fl">
+                                <img src="${arr[j][0]}" alt="">
+                            </div>
+                            <div class="goods-txt fl">
+                                <p class="p1">${arr[j][1]}</p>
+                                <p class="specifications">钢 白色 精钢</p>
+                            </div>
+                            <ul class="fr list clearfix">
+                                <li class="unit_price">
+                                    ¥<em>${arr[j][2]}</em>
+                                </li>
+                                <li class="goods_num">
+                                    <span class="reduce calc-btns" onclick="rec()">-</span> <input type="text"
+                                        class="num" value="1">
+                                    <span class="add calc-btns" onclick="add()">+</span>
+                                </li>
+                                <li class="total_price">¥<em class="subTotal">${arr[j][3]}</em>
+                                </li>
+                                <li class="others">
+                                    <a href="javascript:void(0);" class="delete_goods">删除</a>
+                                    <a href="javascript:void(0);" class="to_collection">移入收藏</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+                        }
+
+                    }
+                }
+
+            }
+        }
+        xhr.open('GET', 'http://localhost:8081/wbiao/chenlinlin/php/shopping_cart.php', true);
+        xhr.send();
+        // 购物车功能
+        var carContent = document.querySelector('.car-content');//父元素
+        var content = document.querySelector('.content');
+        var main = document.querySelector('.main');
+        carContent.addEventListener('click', function () {
+            // 删除商品
+            var shop = document.querySelector('.shop');//子元素
+            var data = event.target.innerHTML;
+            if (data == '删除') {
+                carContent.removeChild(shop);
+            }
+            if (carContent.offsetHeight == 0) {
+                main.style.display = 'none';
+                content.style.display = 'block';
+            } else {
+                main.style.display = 'block';
+                content.style.display = 'none';
+            }
+        })
+        // 增加数目
+        function add() {
+            var num = parseInt(event.target.previousElementSibling.value);
+            num++;
+            var a = num;
+            event.target.previousElementSibling.value = a;
+            var price = parseInt(event.target.parentNode.previousElementSibling.children[0].innerHTML);
+            var totalprice = parseInt(event.target.parentNode.nextElementSibling.children[0].innerHTML);
+            var b = a * price;
+            event.target.parentNode.nextElementSibling.children[0].innerHTML = b;
+        }
+        // 减少数目
+        function rec() {
+            var num = parseInt(event.target.nextElementSibling.value);
+            if (num == 1) {
+                num = 1;
+            } else {
+                num--;
+                var a = num;
+                event.target.nextElementSibling.value = a;
+                var price = parseInt(event.target.parentNode.previousElementSibling.children[0].innerHTML);
+                var totalprice = parseInt(event.target.parentNode.nextElementSibling.children[0].innerHTML);
+                var b = totalprice - price;
+                event.target.parentNode.nextElementSibling.children[0].innerHTML = b;
+            }
+        }
+        // 全选和单选
+        var qx = document.getElementById('footcheck');
+        var dx = document.querySelector('.car-content').querySelectorAll('.dx');
+        var allAmount = document.getElementById('payableAmount');
+        qx.onclick = function () {
+            for (var i = 0; i < dx.length; i++) {
+
+                dx[i].checked = this.checked
+            }
+        }
+        for (var i = 0; i < dx.length; i++) {
+            dx[i].onclick = function () {
+                var flag = true;
+                for (var i = 0; i < dx.length; i++) {
+                    if (!dx[i].checked) {
+                        flag = false;
+                        break;
+                    }
+                }
+                qx.checked = flag;
+                // 合计
+                var totalprice = parseInt(event.target.nextElementSibling.nextElementSibling.nextElementSibling.children[2].children[0].innerHTML);
+                var allAmounts = parseInt(allAmount.innerHTML);
+                if (this.checked == true) {
+                    var a = totalprice + allAmounts;
+                    allAmount.innerHTML = a;
+                } else {
+                    var b = allAmounts - totalprice;
+                    allAmount.innerHTML = b;
+                }
+            }
+        }
+        // 链接到品牌馆
+        function Brands() {
+            window.location.href = "http://localhost:8081/wbiao/chenlinlin/Brands.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+.ardt  h1 {
+    font-size: 22px;
+    line-height: 30px;
+    padding: 20px 0;
+    width: 624px;
+    margin: 0 auto;
+    text-align: center;
+    white-space: normal;
+    color: #333;
+}
+.ardt .arl .bx0 .bxt p {
+    line-height: 14px;
+    height: 14px;
+    text-align: center;
+    color: #888888;
+}
+.nw {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ardt .arl .bx0 .bxt p span {
+    padding: 0 8px;
+}
+
+/* 正文 */
+.arc {
+    padding-top: 20px;
+}
+.ardt .arl {
+    margin-bottom: 20px;
+}
+.ardt .arl {
+    border: 1px solid #e6e6e6;
+    border-top-width: 3px;
+    width: 640px;
+    padding: 0 19px 24px;
+}
+.ardt .arl .bx0 .ct, .ardt .arl .bx0 .ct  *{
+    font-family: '宋体',Times,"Times New Roman",serif;
+    line-height: 28px;
+}
+.ardt .arl .bx0 .bxt {
+    margin-bottom: 34px;
+}
+.ardt .arl .bx0 {
+    color: #333333;
+}
+.ardt .arl .bx0 .ct {
+    width: 630px !important;
+    margin: 20px auto 5px;
+    font-size: 14px;
+}
+.ct{
+    color: #333 !important;
+}
+.ct table {
+    margin: 0 auto;
+}
+.ardt .arl .bx0 .mt {
+    height: 12px;
+    line-height: 12px;
+    padding-top: 20px;
+}
+.ardt .arl .bx0 .dirw {
+    margin-top: 20px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #f4f4f4;
+    padding: 0 10px;
+}
+.ardt .arl .bx0 .dir {
+    width: 300px;
+    overflow: hidden;
+    height: 36px;
+}
+.ardt .arl .bx0 .mt a, .ardt .arl .bx0 .dir a {
+    color: #7f4b1f;
+}
+.ardt .arl .bx0 .next {
+    text-align: right;
+}
+.ardt .arl .bx0 .dir {
+    width: 300px;
+    overflow: hidden;
+    height: 36px;
+}
+.ardt .arl .bx0 .oarlw {
+    margin-top: 15px;
+    padding: 0 1px;
+}
+/* 评论 */
+#comment_box {
+    min-width: 300px;
+}
+#comment_box .comment_area {
+    /* margin-top: 50px; */
+    border: 1px solid #ededed;
+    border-top: 3px solid #dddddd;
+    max-width: 1200px;
+    width: 99% !important;
+    margin-bottom: 15px;
+}
+#comment_box * {
+    font-family: Arial,'Microsoft Yahei','\5FAE\8F6F\96C5\9ED1',sans-serif;
+    font-size: 12px;
+    color: #194886;
+}
+#comment_box .comment_area .ca_top {
+    height: 35px;
+    line-height: 35px;
+    background: url(../images/linebg2.jpg) repeat-x;
+    position: relative;
+}
+#comment_box .comment_area .ca_top .ca_tit {
+    font-weight: bold;
+    border-top: 2px solid #194886;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    padding: 0px 15px;
+    height: 35px;
+}
+#comment_box .comment_area .ca_top .ca_interact {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: #363636;
+}
+#comment_box .cce0 {
+    color: #ce0000;
+}
+#comment_box .comment_area .ca_middle {
+    width: 100%;
+}
+#comment_box .comment_area .ca_middle textarea {
+    border: 1px solid #e9e9e9;
+    width: 96%;
+    max-width: 96%;
+    height: 92px;
+    margin: 20px 8px;
+}
+#comment_box .comment_area .ca_middle_02 {
+    height: 35px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#comment_box .comment_area .ca_middle_02 .login {
+    width: 288px;
+    position: absolute;
+    right: 130px;
+    top: 7px;
+}
+#comment_box a {
+    text-decoration: none;
+    outline: none;
+    color: #194886;
+    border: none;
+}
+#comment_box .comment_area .ca_middle_02 .captha {
+    position: absolute;
+    right: 120px;
+    top: 3px;
+}
+#comment_box .comment_area .ca_middle_02 .captha img {
+    width: 80px!important;
+    height: 25px!important;
+}
+#comment_box .comment_area .ca_middle_02 .publish {
+    width: 90px;
+    position: absolute;
+    right: 10px;
+}
+#comment_box .comment_area .ca_middle_02 .publish .n__pl_btn {
+    width: 85px;
+    height: 29px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    background: #194886;
+    border-radius: 5px;
+}
+
+/*  */
+.ardt .arl .bx0 .oarlw dl {
+    width: 300px;
+}
+.ardt .arl .bx0 .oarlw dt {
+    color: #333333;
+    font-size: 16px;
+    height: 43px;
+    line-height: 43px;
+}
+.ardt .arl .bx0 .oarlw li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    list-style: square;
+    list-style-position: inside;
+    color: #666666;
+}
+.ardt .arl .bx0 .oarlw li a {
+    color: #666666;
+}
+.ardt .arl .bx0 .oarlw li a:hover{
+    color: #7f4b1f;
+    cursor: pointer;
+}
+
+/* 右侧 */
+
+.arr {
+    width: 300px;
+    padding-bottom: 20px;
+}
+/* 资讯排行 */
+.arr .bx1 {
+    margin-top: 23px;
+}
+.arr .bxt h2 {
+    line-height: 44px;
+    height: 44px;
+    font-weight: normal;
+}
+.arr .bxt span {
+    padding-left: 6px;
+    font-size: 14px;
+}
+.arr .bxc li {
+    height: 26px;
+}
+.arr .bxc li span {
+    /* display: inline-block; */
+    float: left;
+    width: 28px;
+    font-size: 16px;
+    line-height: 26px;
+    height: 26px;
+    font-family: "Times New Roman",Times,serif;
+    font-style: italic;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.arr .bxc li a {
+    font-style: normal;
+    line-height: 26px;
+    height: 26px;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+/* 名品展会 */
+.arr .bxsw {
+    margin-top: 10px;
+}
+.arr .bxsw .bxt {
+    margin-bottom: 7px;
+}
+/* 编辑推荐 */
+.bx3 {
+    margin-top: 13px;
+}
+/*  */
+.scan-board {
+    width: 300px;
+    height: 220px;
+    display: block;
+    margin-top: 20px;
+}
+.scan-board .top {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    background-color: #804b1f;
+    font-weight: bold;
+    font-size: 20px;
+}
+.scan-board .mid {
+    background-color: #eee;
+    padding: 20px 10px;
+}
+.scan-board .l {
+    float: left;
+    width: 142px;
+    background-color: #fff;
+}
+.scan-board .r {
+    float: right;
+    margin-top: 35px;
+    width: 120px;
+}
+.scan-board .u {
+    color: #999;
+    font-size: 15px;
+}
+.scan-board .n {
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 28px;
+    margin-top: -4px;
+    margin-bottom: 2px;
+}
+.scan-board .btn {
+    background-color: #43a1e1;
+    color: #fff;
+    text-align: center;
+    width: 118px;
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    border-radius: 5px;
+}

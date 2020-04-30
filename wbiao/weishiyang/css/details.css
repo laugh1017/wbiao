@@ -1,0 +1,48 @@
+.ardt .arl .bx0 .ct, .ardt .arl .bx0 .ct * {
+    font-family: '宋体',Times,"Times New Roman",serif;
+    line-height: 28px;
+    color: #333333;
+}
+
+.ardt .arl .bx0 .bxt {
+    margin-bottom: 34px;
+}
+.nw {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ardt h1 {
+    font-size: 22px;
+    line-height: 30px;
+    padding: 20px 0;
+    text-align: center;
+    white-space: normal;
+    overflow: hidden;
+    color: #333333;
+}
+.ardt .arl .bx0 .bxt p {
+    line-height: 14px;
+    height: 14px;
+    text-align: center;
+    color: #888888;
+}
+.ardt .arl .bx0 .bxt p span {
+    padding: 0 8px;
+}
+
+.ardt .arl .bx0 .ct {
+    margin: 20px auto 5px;
+    font-size: 14px;
+}
+.ct div{
+    font-size: 14px;
+    margin-top: 30px;
+}
+.ct div img{
+    width: 605px;
+}
+.ardt .arl .bx0 .mt {
+    height: 12px;
+    line-height: 12px;
+    padding-top: 20px;
+}

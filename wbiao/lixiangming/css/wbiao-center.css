@@ -1,0 +1,205 @@
+
+.c-con-carous{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.c-con-carous ul{
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+}
+.c-con-carous ul li{
+    width: 100%;
+    height: 460px;
+    float: left;
+}
+.c-con-box1{
+    margin: 70px 0px 30px;
+}
+.c-box1-top{
+    height: 50px;
+}
+.c-box1-top  span{
+    display: inline-block;
+    font-size: 14px;
+    color: #999999;
+    margin: 0px 10px;
+    vertical-align: middle;
+}
+
+.c-box1-top span:nth-child(1){
+    font-size: 28px;
+    color: #333333;
+}
+.c-box2-top{
+    padding-left: 82px;
+    height: 46px;
+    background: #f1f1f1;
+    margin-bottom: 15px;
+}
+.advantage_nav{
+    height: 0;
+}
+.active{
+    background-color: #ccaa7a;
+    color: #ffffff;
+}
+.advantage_nav li{
+    float: left;
+    width: 102px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.box_content{
+    height: 290px;
+}
+.c_box2_left{
+    width: 590px;
+    float: left;
+}
+.c_box2_left img{
+    border: 0;
+    display: block;
+}
+.c_box2_right{
+    width: 394px;
+    height: 212px;
+    padding: 70px 94px 0 102px;
+    background: #f1f1f1;
+    margin-left: 20px;
+    float: left;
+}
+.c_box2_right h4{
+    font-size: 20px;
+    color: #343434;
+    margin-bottom: 30px;
+}
+.c_box2_right p{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+.box1_content{
+    height: 290px;
+}
+.box1_content{
+    display: none;
+}
+.search_area {
+    height: 56px;
+    padding-top: 44px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+ .search_area div {
+    position: relative;
+    height: 46px;
+    width: 360px;
+    margin: 0 auto;
+}
+.search_area div input {
+    width: 330px;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ddd;
+    height: 36px;
+    vertical-align: bottom;
+}
+.c-box-left{
+    width: 590px;
+    height: 580px;
+    overflow: hidden;
+}
+.search_area div img {
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+.area_list {
+    height: 525px;
+    overflow: auto;
+}
+.area_list .area_item {
+    background: #f1f1f1;
+    height: 127px;
+    padding-top: 48px;
+}
+.fl{
+    float: left;
+}
+.area_item .area_left {
+    padding-left: 45px;
+    width: 385px;
+}
+.area_item .area_left .area_name {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.area_item .area_left .position {
+    font-size: 12px;
+    color: #666;
+}
+.area_item .area_left .position p {
+    line-height: 20px;
+}
+.area_list .area_item .area_left .position p {
+    line-height: 20px;
+}
+.area_item .area_right {
+    padding: 32px 29px;
+    width: 84px;
+}
+.area_item .area_right .check_map {
+    display: inline-block;
+    width: 78px;
+    height: 14px;
+    line-height: 14px;
+    padding: 11px 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.area_item .area_right .check_map i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(https://static.wbiao.co/d/pc/images/o2o/position_normal.png);
+    vertical-align: middle;
+}
+.area_item .area_right .check_map span {
+    font-size: 14px;
+    color: #666;
+    vertical-align: middle;
+}
+.c-box-right{
+    width: 590px;
+    height: 580px;
+    margin-left: 20px;
+    overflow: hidden;
+    position: relative;
+}
+#con_car{
+    float: left;
+    width: 3540px;
+    height: 100%;
+    transition: all 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+#con_car li{
+    float: left;
+    width: 590px;
+    height: 580px;
+}

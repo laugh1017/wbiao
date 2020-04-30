@@ -1,0 +1,67 @@
+.ar-txt{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    left: 0;
+    bottom: 1px;
+    height: 84px;
+    padding: 8px 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.ar-txt p {
+    color: #ffffff;
+    width: 438px;
+    margin: 0 auto;
+}
+.ar-txt .tt{
+    line-height: 36px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.indtitle .more {
+    float: right ;
+    color: #13417e;
+    border: 2px solid #ebeced;
+    display: block;
+    padding: 2px;
+    margin-top: 5px;
+}
+.listdldd {
+    overflow: hidden;
+    padding-bottom: 38px;
+}
+.listdldd dl {
+    padding: 20px 0;
+    border-bottom: 1px solid #ebeced;
+}
+.listdldd dl dt {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+}
+.listdldd dl dt img {
+    width: 80px;
+}
+.listdldd dl dd {
+    float: right;
+    width: 165px;
+}
+
+.listdldd dl dd a p.p1 {
+    height: 38px;
+    overflow: hidden;
+    font-size: 14px ;
+    color: #333 ;
+}
+.listdldd dl dd a p.p2 {
+    text-align: right;
+    padding-top: 20px;
+    font-size: 14px ;
+    color: #333 ;
+}
+.mar24 {
+    margin-top: 24px;
+}

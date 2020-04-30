@@ -1,0 +1,114 @@
+.choose{
+    margin-top: 30px;
+}
+.clkw{
+    border: 1px solid rgb(214, 211, 211,.7);
+    overflow: hidden;
+}
+.clkw div:first-child{
+    width: 74px;
+    padding: 11px 0;
+    text-align: center;
+    color: #010101;
+}
+.clkw ul li{
+    float: left;
+    padding: 11px 0;
+    margin-left: 20px;
+    color: #194886;
+    cursor: pointer;
+}
+.clkw ul li p{
+    float: left;
+    padding: 0 5px;
+    margin-left: 20px;
+    color: #fff;
+    background: #989898;
+    height: 20px;
+    text-align: center;
+}
+.chone a{
+    width: 62px;
+    display: block;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+.on{
+    color: #fff;
+    background: #194886;
+}
+
+.pinpai{
+    margin-left: 75px;
+}
+.pinpai dl {
+    width: 87px;
+    margin: 15px 10px 5px 15px;
+    float: left;
+}
+.pinpai dl dt {
+    width: 85px ;
+    height: 38px;
+    border: 1px solid #eee;
+}
+.pinpai dl dt img {
+    width: 85px;
+    height: 38px;
+}
+.pinpai dl dd {
+    width: 85px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.pinpai dl dd p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 85px; 
+    text-align: center;
+    line-height: 16px;
+    color: #194886;
+}
+.pinpai dl dd:hover p{
+    color: #fff ;
+    background: #194886;
+    cursor: pointer;
+}
+
+.watch {
+    margin-top: 50px;
+    border-top: 1px solid rgba(192,190,190,.7);
+}
+.watch ul li{
+    text-align: center;
+    width: 151px;
+    height: 280px;
+    float: left;
+    margin-bottom: 30px;
+}
+.watch ul li img{
+    width: 150px;
+    height: 200px;
+}
+.watch ul li p{
+    font-size: 14px;
+    color: #444;
+}
+.watch ul li .p1{
+    height: 25px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.watch ul li .p2{
+    line-height: 29px;
+    color: #f50011;
+    font-weight: bold;
+    font-size: 14px;
+}
+.watch ul li .p2 .ckj{
+    color: #444;
+    font-size: 12px;
+}

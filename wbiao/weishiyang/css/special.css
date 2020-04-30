@@ -1,0 +1,77 @@
+* {
+    font-family: Arial,'Microsoft Yahei','\5FAE\8F6F\96C5\9ED1',sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    border: none;
+}
+
+.bx1 li {
+    padding-bottom: 23px;
+}
+.bx1 .lta li .ttl {
+    font-size: 18px;
+    padding-top: 10px;
+}
+ .bx1 .lta li .ttl a {
+    color: #444444 ;
+    font-size: 18px;
+    line-height: 37px;
+}
+ .bx1 .lta li .dtl dt a {
+    display: block;
+    width: 606px;
+    height: 221px;
+}
+ .bx1 .lta li .dtl dt img{
+    width: 606px;
+    height: auto;
+    margin-top: -1px;
+}
+.h1h2{
+    color: #444;
+}
+.h1h2:hover {
+    color: #194886 ;
+}
+.rightnewss {
+    border: 1px solid #e1e1e1;
+    margin-top: 40px;
+    overflow: hidden;
+    height: 186px;
+}
+ .arl .bx1 .pgw {
+    padding-top: 10px;
+    position: relative;
+}
+.pg {
+    float: right;
+}
+.arltsp .arl .bx1 li {
+    padding-bottom: 23px;
+}
+.pg span {
+    color: #878787;
+    background: #f7f7f7;
+}
+.pg li {
+    float: left;
+    height: 34px;
+    margin-right: 3px;
+}
+.pg .on a, .pg .on span {
+    background-color: #dcdcdc;
+    border-color: #dcdcdc;
+}
+.pg a, .pg span {
+    color: #878787;
+    font-family: songti!important;
+    background: #f7f7f7;
+    padding: 7px 12px;
+    display: block;
+    float: left;
+    margin-right: 6px;
+    border-radius: 5px;
+}

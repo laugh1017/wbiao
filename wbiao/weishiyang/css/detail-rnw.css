@@ -1,0 +1,117 @@
+ .arl .bx0 {
+    color: #333333;
+}
+ .arl .bx0 .bxt {
+    margin-bottom: 34px;
+}
+.arl .bxt h1 {
+    font-size: 22px;
+    line-height: 30px;
+    padding: 20px 0;
+    color: #333;
+    text-align: center;
+    white-space: normal;
+    
+}
+.arl .bx0 .bxt p {
+    line-height: 14px;
+    height: 14px;
+    text-align: center;
+    color: #888888;
+}
+.nw {
+    white-space: nowrap;
+    overflow: hidden;
+}
+ .arl .bx0 .bxt p span {
+    padding: 0 8px;
+}
+.bx0 div{
+    margin: 30px auto 0;
+    color: #333;
+    font-size: 14px ;
+}
+.bx0 img{
+    width: 700px;
+    height: 600px;
+}
+ .arl .bx0 .oarlw {
+    margin-top: 35px;
+}
+ .arl .bx0 .oarlw dl {
+    width: 300px;
+}
+ .arl .bx0 .oarlw dt {
+    color: #333333;
+    font-size: 16px;
+    height: 43px;
+    line-height: 43px;
+}
+.arl .bx0 .oarlw li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    list-style: square;
+    list-style-position: inside;
+    color: #666666;
+}
+.arl .bx0 .oarlw li a {
+    color: #666666;
+}
+
+
+.scan-board {
+    width: 300px;
+    height: 220px;
+    display: block;
+    margin-top: 20px;
+}
+.scan-board .top {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    background-color: #804b1f;
+    font-weight: bold;
+    font-size: 20px;
+}
+.scan-board .mid {
+    background-color: #eee;
+    padding: 20px 10px;
+}
+.scan-board .l {
+    float: left;
+    width: 142px;
+    background-color: #fff;
+}
+.scan-board .r {
+    float: right;
+    margin-top: 35px;
+    width: 120px;
+}
+.scan-board .u {
+    color: #999;
+    font-size: 15px;
+}
+.scan-board .n {
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 28px;
+    margin-top: -4px;
+    margin-bottom: 2px;
+}
+.scan-board .btn {
+    background-color: #43a1e1;
+    color: #fff;
+    text-align: center;
+    width: 118px;
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    border-radius: 5px;
+}
