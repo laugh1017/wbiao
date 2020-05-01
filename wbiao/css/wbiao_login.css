@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+i,em{
+    font-style: normal;
+}
+.werp{
+    width: 990px;
+    margin: auto;
+}
+.login_logo{
+    width: 100%;
+    height: auto;
+    margin:40px 0 20px;
+}
+.login_bg{
+    width: 100%;
+    float: left;
+    height: auto;
+    background: url(../images/lodin_bg.jpg) 0px 0px no-repeat;
+}
+.login_box{
+    width: 380px;
+    height: 460px;
+    margin: 50px;
+    background-color: #ffffff;
+    float: right;
+    position: relative;
+}
+.login_tab {
+    overflow: hidden;
+    width: 269px;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+}
+.login_tab span {
+    height: 26px;
+    line-height: 26px;
+    font-size: 20px;
+    color: grey;
+    float: left;
+    width: 134px;
+    text-align: center;
+    cursor: pointer;
+}
+.login_tab em {
+    float: left;
+    background: #ddd;
+    height: 24px;
+    font-size: 0;
+    width: 1px;
+    margin-top: 1px;
+}
+a{
+    text-decoration: none;
+    color: #999;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.none{
+    display: none;
+}
+.rig{
+    float: right;
+    margin-right: 20px;
+}
+.pos{
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+.pos .a3{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.pos .a4{
+    position: absolute;
+    top: 9px;
+    right: 75px;
+}
+.pos .a2{
+    position: absolute;
+    top: 0px;
+    right: 90px;
+}
+.pos .a1{
+    position: absolute;
+    top: 0px;
+    right: 90px;
+}
+.pos em{
+    color: #999;
+    margin-left: 18px;
+}
+.qr_code {
+    margin: 30px auto 20px;
+    z-index: 10;
+    width: 183px;
+    height: 183px;
+}
+.qr_code img{
+    width: 100%;
+    height: auto;
+}
+ .con_box1 p {
+    font-size: 16px;
+    color: #666;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.con_box1 span {
+    font-size: 16px;
+    color: #cc5252;
+    cursor: pointer;
+}
+.con_box1 a {
+    width: 160px;
+    height: 40px;
+    margin: 27px auto 0;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 100px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    line-height: 40px;
+}
+.login_tab .red{
+    color: red;
+}
